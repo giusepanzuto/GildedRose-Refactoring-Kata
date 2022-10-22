@@ -104,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgedBrie.cs" />
-    <Compile Include="AgedBrieTestTest.cs" />
+    <Compile Include="AgedBrieTest.cs" />
     <Compile Include="ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="GildedRoseTest.cs" />

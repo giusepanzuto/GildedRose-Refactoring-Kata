@@ -2,11 +2,11 @@
 {
     public class AgedBrie : Item
     {
-        public AgedBrie()
+        public AgedBrie(int sellIn, int quality)
         {
             Name = "Aged Brie";
-            SellIn = 2;
-            Quality = 0;
+            SellIn = sellIn;
+            Quality = quality;
         }
 
         public override void UpdateQuality()
