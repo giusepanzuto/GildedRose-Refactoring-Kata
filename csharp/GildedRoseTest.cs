@@ -15,4 +15,5 @@ namespace csharp
             Assert.AreEqual("foo", Items[0].Name);
         }
     }
+
 }

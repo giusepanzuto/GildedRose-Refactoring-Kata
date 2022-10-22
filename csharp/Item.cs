@@ -11,11 +11,14 @@
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
         }
 
-        public void UpdateQuality()
+        public virtual void UpdateQuality()
         {
             if (Name != "Aged Brie" && Name != "Backstage passes to a TAFKAL80ETC concert")
             {
-                DecreaseQuality();
+                if (Name != "Sulfuras, Hand of Ragnaros")
+                {
+                    DecreaseQuality();
+                }
             }
 
             if (Name == "Aged Brie" || Name == "Backstage passes to a TAFKAL80ETC concert")
@@ -50,7 +53,10 @@
                 {
                     if (Name != "Backstage passes to a TAFKAL80ETC concert")
                     {
-                        DecreaseQuality();
+                        if (Name != "Sulfuras, Hand of Ragnaros")
+                        {
+                            DecreaseQuality();
+                        }
                     }
                     else
                     {
@@ -64,23 +70,20 @@
             }
         }
 
-        private void ResetQuality()
+        protected void DecreaseQuality()
+        {
+            if (Quality > 0)
+            {
+                Quality = Quality - 1;
+            }
+        }
+
+        protected void ResetQuality()
         {
             Quality = 0;
         }
 
-        private void DecreaseQuality()
-        {
-            if (Quality > 0)
-            {
-                if (Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    Quality = Quality - 1;
-                }
-            }
-        }
-
-        private void IncreaseQuality()
+        protected void IncreaseQuality()
         {
             if (Quality < 50)
             {
