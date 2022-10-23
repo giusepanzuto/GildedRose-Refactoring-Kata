@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="AgedBrie.cs" />
     <Compile Include="Backstage.cs" />
+    <Compile Include="Plus5DexterityVest.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />
     <Compile Include="Tests\ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sulfuras.cs" />
+    <Compile Include="Tests\Plus5DexterityVestTest.cs" />
     <Compile Include="Tests\SulfurasTest.cs" />
   </ItemGroup>
   <ItemGroup>

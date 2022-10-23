@@ -3,14 +3,14 @@
 namespace csharp
 {
     [TestFixture]
-    public class BackstageTest
+    public class Plus5DexterityVestTest
     {
-        [TestCase(2, 0, 3)]
+        [TestCase(2, 0, 0)]
         [TestCase(0, 0, 0)]
-        [TestCase(2, 50, 50)]
+        [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var agedBrie = new Backstage(sellIn, quality);
+            var agedBrie = new Plus5DexterityVest(sellIn, quality);
 
             agedBrie.UpdateQuality();
 

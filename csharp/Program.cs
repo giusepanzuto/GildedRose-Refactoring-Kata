@@ -10,7 +10,7 @@ namespace csharp
             Console.WriteLine("OMGHAI!");
 
             IList<Item> Items = new List<Item>{
-                new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
+                new Plus5DexterityVest(10, 20),
                 new AgedBrie(2, 0),
                 new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
                 new Sulfuras(0, 80),
