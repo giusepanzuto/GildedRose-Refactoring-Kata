@@ -12,7 +12,7 @@ namespace csharp
             IList<Item> Items = new List<Item>{
                 new Plus5DexterityVest(10, 20),
                 new AgedBrie(2, 0),
-                new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
+                new ElixirOfTheMongoose(5, 7),
                 new Sulfuras(0, 80),
                 new Sulfuras(-1, 80),
                 new Backstage(15,20),
