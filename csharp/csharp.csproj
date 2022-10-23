@@ -104,13 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgedBrie.cs" />
-    <Compile Include="AgedBrieTest.cs" />
-    <Compile Include="ApprovalTest.cs" />
+    <Compile Include="Tests\AgedBrieTest.cs" />
+    <Compile Include="Tests\ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
-    <Compile Include="GildedRoseTest.cs" />
+    <Compile Include="Tests\GildedRoseTest.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sulfuras.cs" />
+    <Compile Include="Tests\SulfurasTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

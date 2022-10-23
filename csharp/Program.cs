@@ -13,8 +13,8 @@ namespace csharp
                 new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
                 new AgedBrie(2, 0),
                 new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
-                new Item {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80},
-                new Item {Name = "Sulfuras, Hand of Ragnaros", SellIn = -1, Quality = 80},
+                new Sulfuras(0, 80),
+                new Sulfuras(-1, 80),
                 new Item
                 {
                     Name = "Backstage passes to a TAFKAL80ETC concert",
