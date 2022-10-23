@@ -2,11 +2,8 @@
 {
     public class ElixirOfTheMongoose: Item
     {
-        public ElixirOfTheMongoose(int sellIn, int quality)
+        public ElixirOfTheMongoose(int sellIn, ItemQuality quality): base("Elixir of the Mongoose", sellIn, quality)
         {
-            SellIn = sellIn;
-            Quality = quality;
-            Name = "Elixir of the Mongoose";
         }
 
         public override void UpdateQuality()

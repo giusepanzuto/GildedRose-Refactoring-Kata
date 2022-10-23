@@ -2,9 +2,16 @@
 {
     public abstract class Item
     {
-        public string Name { get; set; }
+        public string Name { get; }
         public int SellIn { get; set; }
-        public int Quality { get; set; }
+        public ItemQuality Quality { get; }
+
+        protected Item(string name, int sellIn, ItemQuality quality)
+        {
+            Name = name;
+            SellIn = sellIn;
+            Quality = quality;
+        }
 
         public override string ToString()
         {
@@ -15,23 +22,17 @@
 
         protected void DecreaseQuality()
         {
-            if (Quality > 0)
-            {
-                Quality = Quality - 1;
-            }
+            Quality.Decrease();
         }
 
         protected void ResetQuality()
         {
-            Quality = 0;
+            Quality.Reset();
         }
 
         protected void IncreaseQuality()
         {
-            if (Quality < 50)
-            {
-                Quality = Quality + 1;
-            }
+            Quality.Increase();
         }
     }
 }

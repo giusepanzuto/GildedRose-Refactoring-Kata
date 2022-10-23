@@ -10,11 +10,11 @@ namespace csharp
         [TestCase(2, 50)]
         public void UpdateQuality(int sellIn, int quality)
         {
-            var agedBrie = new Sulfuras(sellIn, quality);
+            var sulfuras = new Sulfuras(sellIn, quality);
 
-            agedBrie.UpdateQuality();
+            sulfuras.UpdateQuality();
 
-            Assert.AreEqual(quality, agedBrie.Quality);
+            Assert.AreEqual(new ItemQuality(quality), sulfuras.Quality);
         }
     }
 

@@ -2,11 +2,8 @@
 {
     public class Sulfuras : Item
     {
-        public Sulfuras(int sellIn, int quality)
+        public Sulfuras(int sellIn, ItemQuality quality):base("Sulfuras, Hand of Ragnaros", sellIn , quality)
         {
-            SellIn = sellIn;
-            Quality = quality;
-            Name = "Sulfuras, Hand of Ragnaros";
         }
 
         public override void UpdateQuality()

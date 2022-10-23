@@ -107,6 +107,7 @@
     <Compile Include="Items\Backstage.cs" />
     <Compile Include="Items\ConjuredManaCake.cs" />
     <Compile Include="Items\ElixirOfTheMongoose.cs" />
+    <Compile Include="ItemQuality.cs" />
     <Compile Include="Items\Plus5DexterityVest.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />
     <Compile Include="Tests\ApprovalTest.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Items\Sulfuras.cs" />
+    <Compile Include="Tests\ItemQualityTest.cs" />
     <Compile Include="Tests\Plus5DexterityVestTest.cs" />
     <Compile Include="Tests\SulfurasTest.cs" />
   </ItemGroup>

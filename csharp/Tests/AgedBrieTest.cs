@@ -15,7 +15,7 @@ namespace csharp
 
             agedBrie.UpdateQuality();
 
-            Assert.AreEqual(expectedQuality, agedBrie.Quality);
+            Assert.AreEqual(new ItemQuality(expectedQuality), agedBrie.Quality);
         }
     }
 }

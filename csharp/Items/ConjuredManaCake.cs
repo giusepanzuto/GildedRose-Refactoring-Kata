@@ -2,11 +2,8 @@
 {
     public class ConjuredManaCake : Item
     {
-        public ConjuredManaCake(int sellIn, int quality)
+        public ConjuredManaCake(int sellIn, ItemQuality quality): base("Conjured Mana Cake", sellIn, quality)
         {
-            SellIn = sellIn;
-            Quality = quality;
-            Name = "Conjured Mana Cake";
         }
 
         public override void UpdateQuality()

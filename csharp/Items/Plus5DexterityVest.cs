@@ -2,11 +2,8 @@
 {
     public class Plus5DexterityVest : Item
     {
-        public Plus5DexterityVest(int sellIn, int quality)
+        public Plus5DexterityVest(int sellIn, ItemQuality quality):base("+5 Dexterity Vest", sellIn, quality)
         {
-            SellIn = sellIn;
-            Quality = quality;
-            Name = "+5 Dexterity Vest";
         }
 
         public override void UpdateQuality()

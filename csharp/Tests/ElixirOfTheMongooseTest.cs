@@ -10,11 +10,11 @@ namespace csharp
         [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var agedBrie = new ElixirOfTheMongoose(sellIn, quality);
+            var elixirOfTheMongoose = new ElixirOfTheMongoose(sellIn, quality);
 
-            agedBrie.UpdateQuality();
+            elixirOfTheMongoose.UpdateQuality();
 
-            Assert.AreEqual(expectedQuality, agedBrie.Quality);
+            Assert.AreEqual(new ItemQuality(expectedQuality), elixirOfTheMongoose.Quality);
         }
     }
 }

@@ -2,28 +2,23 @@
 {
     public class Backstage : Item
     {
-        public Backstage(int sellIn, int quality)
+        public Backstage(int sellIn, ItemQuality quality) : 
+            base("Backstage passes to a TAFKAL80ETC concert", sellIn, quality)
         {
-            SellIn = sellIn;
-            Quality = quality;
-            Name = "Backstage passes to a TAFKAL80ETC concert";
         }
 
         public override void UpdateQuality()
         {
-            if (Quality < 50)
+            Quality.Increase();
+
+            if (SellIn < 11)
             {
-                IncreaseQuality();
+                Quality.Increase();
+            }
 
-                if (SellIn < 11)
-                {
-                    IncreaseQuality();
-                }
-
-                if (SellIn < 6)
-                {
-                    IncreaseQuality();
-                }
+            if (SellIn < 6)
+            {
+                Quality.Increase();
             }
 
             SellIn = SellIn - 1;
