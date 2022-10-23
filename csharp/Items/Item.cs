@@ -19,20 +19,5 @@
         }
 
         public abstract void UpdateQuality();
-
-        protected void DecreaseQuality()
-        {
-            Quality.Decrease();
-        }
-
-        protected void ResetQuality()
-        {
-            Quality.Reset();
-        }
-
-        protected void IncreaseQuality()
-        {
-            Quality.Increase();
-        }
     }
 }

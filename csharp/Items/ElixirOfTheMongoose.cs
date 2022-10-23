@@ -8,13 +8,13 @@
 
         public override void UpdateQuality()
         {
-            DecreaseQuality();
+            Quality.Decrease();
 
             SellIn = SellIn - 1;
 
             if (SellIn < 0)
             {
-                DecreaseQuality();
+                Quality.Decrease();
             }
         }
 

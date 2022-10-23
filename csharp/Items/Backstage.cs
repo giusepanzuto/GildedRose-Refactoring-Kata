@@ -25,7 +25,7 @@
 
             if (SellIn < 0)
             {
-                ResetQuality();
+                Quality.Reset();
             }
         }
     }
