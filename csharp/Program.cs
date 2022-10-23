@@ -19,7 +19,7 @@ namespace csharp
                 new Backstage(10,49),
                 new Backstage(5,49),
 				// this conjured item does not work properly yet
-				new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
+				new ConjuredManaCake(3, 6)
             };
 
             var app = new GildedRose(Items);

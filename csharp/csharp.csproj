@@ -105,12 +105,14 @@
   <ItemGroup>
     <Compile Include="AgedBrie.cs" />
     <Compile Include="Backstage.cs" />
+    <Compile Include="ConjuredManaCake.cs" />
     <Compile Include="ElixirOfTheMongoose.cs" />
     <Compile Include="Plus5DexterityVest.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />
     <Compile Include="Tests\ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="Tests\BackstageTest.cs" />
+    <Compile Include="Tests\ConjuredManaCakeTest.cs" />
     <Compile Include="Tests\ElixirOfTheMongooseTest.cs" />
     <Compile Include="Tests\GildedRoseTest.cs" />
     <Compile Include="Item.cs" />
