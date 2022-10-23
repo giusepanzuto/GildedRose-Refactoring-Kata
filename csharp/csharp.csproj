@@ -103,11 +103,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgedBrie.cs" />
-    <Compile Include="Backstage.cs" />
-    <Compile Include="ConjuredManaCake.cs" />
-    <Compile Include="ElixirOfTheMongoose.cs" />
-    <Compile Include="Plus5DexterityVest.cs" />
+    <Compile Include="Items\AgedBrie.cs" />
+    <Compile Include="Items\Backstage.cs" />
+    <Compile Include="Items\ConjuredManaCake.cs" />
+    <Compile Include="Items\ElixirOfTheMongoose.cs" />
+    <Compile Include="Items\Plus5DexterityVest.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />
     <Compile Include="Tests\ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
@@ -115,10 +115,10 @@
     <Compile Include="Tests\ConjuredManaCakeTest.cs" />
     <Compile Include="Tests\ElixirOfTheMongooseTest.cs" />
     <Compile Include="Tests\GildedRoseTest.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Items\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sulfuras.cs" />
+    <Compile Include="Items\Sulfuras.cs" />
     <Compile Include="Tests\Plus5DexterityVestTest.cs" />
     <Compile Include="Tests\SulfurasTest.cs" />
   </ItemGroup>
