@@ -3,22 +3,14 @@ using csharp.Items;
 
 namespace csharp
 {
-    public class GildedRose
+    public class GildedRose : IGildedRose
     {
-        readonly IList<IItem> _items;
-        public GildedRose(IList<IItem> Items)
+        public void UpdateQuality(IList<IItem> items)
         {
-            _items = Items;
-        }
-
-        public void UpdateQuality()
-        {
-            foreach (var item in _items)
+            foreach (var item in items)
             {
                 item.UpdateQuality();
             }
         }
-
-
     }
 }

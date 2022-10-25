@@ -103,7 +103,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleItemsPresenter.cs" />
     <Compile Include="GildedRoseRunner.cs" />
+    <Compile Include="IGildedRose.cs" />
+    <Compile Include="IItemSource.cs" />
+    <Compile Include="IItemsPresenter.cs" />
+    <Compile Include="ItemSource.cs" />
     <Compile Include="Items\Items.cs" />
     <Compile Include="ItemQuality.cs" />
     <Compile Include="Items\IItem.cs" />
@@ -113,6 +118,7 @@
     <Compile Include="Items\QualityUpdater\QualityUpdaterDecrease.cs" />
     <Compile Include="Items\QualityUpdater\QualityUpdaterBackstage.cs" />
     <Compile Include="Items\QualityUpdater\QualityUpdaterNope.cs" />
+    <Compile Include="RunnerFactory.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />
     <Compile Include="Tests\ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />

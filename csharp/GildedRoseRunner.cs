@@ -1,40 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using csharp.Items;
-
-namespace csharp
+﻿namespace csharp
 {
     public class GildedRoseRunner
     {
-        private readonly IList<IItem> _items;
+        private readonly IItemsPresenter _itemsPresenter;
+        private readonly IGildedRose _app;
+        private readonly IItemSource _itemSource;
 
-        public GildedRoseRunner(IList<IItem> items)
+        public GildedRoseRunner(IItemsPresenter itemsPresenter, IGildedRose gildedRose, IItemSource itemSource)
         {
-            _items = items;
+            _itemsPresenter = itemsPresenter;
+            _app = gildedRose;
+            _itemSource = itemSource;
         }
 
-        public void RunFor(int days)
+        public void Run()
         {
-            var app = new GildedRose(_items);
+            var items = _itemSource.Get();
 
-            for (var day = 0; day < days; day++)
+            for (var day = 0; day < 31; day++)
             {
-                WriteDailyItemStatus(day, _items);
+                _itemsPresenter.WriteDailyItemStatus(day, items);
 
-                app.UpdateQuality();
+                _app.UpdateQuality(items);
             }
-        }
-
-        private static void WriteDailyItemStatus(int day, IList<IItem> Items)
-        {
-            Console.WriteLine($"-------- day {day} --------");
-            Console.WriteLine("name, sellIn, quality");
-            foreach (var item in Items)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.WriteLine("");
         }
     }
 }
