@@ -2,13 +2,8 @@
 {
     public class Sulfuras : Item
     {
-        public Sulfuras(ItemStatus itemStatus):base("Sulfuras, Hand of Ragnaros", itemStatus)
+        public Sulfuras(ItemStatus itemStatus):base("Sulfuras, Hand of Ragnaros", itemStatus, new QualityUpdaterNope())
         {
-        }
-
-        public override void UpdateQuality()
-        {
-            //nope
         }
     }
 }

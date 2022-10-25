@@ -2,20 +2,8 @@
 {
     public class ConjuredManaCake : Item
     {
-        public ConjuredManaCake(ItemStatus itemStatus): base("Conjured Mana Cake", itemStatus)
+        public ConjuredManaCake(ItemStatus itemStatus): base("Conjured Mana Cake", itemStatus, new QualityUpdater2())
         {
-        }
-
-        public override void UpdateQuality()
-        {
-            Quality.Decrease();
-
-            SellIn = SellIn - 1;
-
-            if (SellIn < 0)
-            {
-                Quality.Decrease();
-            }
         }
     }
 }

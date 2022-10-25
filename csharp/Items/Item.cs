@@ -1,8 +1,10 @@
 ﻿namespace csharp
 {
-    public abstract class Item : IItem
+    public class Item : IItem
     {
-        private readonly ItemStatus _status;
+        protected readonly ItemStatus _status;
+        private readonly IQualityUpdater _qualityUpdater;
+
         public string Name { get; }
         public int SellIn
         {
@@ -11,10 +13,11 @@
         }
         public ItemQuality Quality => _status.Quality;
 
-        protected Item(string name, ItemStatus itemStatus)
+        protected Item(string name, ItemStatus itemStatus, IQualityUpdater qualityUpdater)
         {
             Name = name;
             _status = itemStatus;
+            _qualityUpdater = qualityUpdater;
         }
 
         public override string ToString()
@@ -22,7 +25,10 @@
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
         }
 
-        public abstract void UpdateQuality();
+        public void UpdateQuality()
+        {
+            _qualityUpdater.UpdateStatus(_status);
+        }
     }
 
     public class ItemStatus
