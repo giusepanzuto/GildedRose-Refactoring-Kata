@@ -11,11 +11,12 @@ namespace csharp
         [TestCase(2, 50, 50)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var agedBrie = new AgedBrie(new ItemStatus(quality, sellIn));
+            var itemStatus = new ItemStatus(quality, sellIn);
+            var agedBrie = new AgedBrie(itemStatus);
 
             agedBrie.UpdateQuality();
 
-            Assert.AreEqual(new ItemQuality(expectedQuality), agedBrie.Quality);
+            Assert.AreEqual(new ItemQuality(expectedQuality), itemStatus.Quality);
         }
     }
 }

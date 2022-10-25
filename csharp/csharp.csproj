@@ -110,6 +110,7 @@
     <Compile Include="ItemQuality.cs" />
     <Compile Include="Items\IItem.cs" />
     <Compile Include="Items\IQualityUpdater.cs" />
+    <Compile Include="Items\ItemStatus.cs" />
     <Compile Include="Items\Plus5DexterityVest.cs" />
     <Compile Include="Items\QualityUpdater1.cs" />
     <Compile Include="Items\QualityUpdater2.cs" />

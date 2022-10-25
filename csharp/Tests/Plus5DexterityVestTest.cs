@@ -10,11 +10,12 @@ namespace csharp
         [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var plus5DexterityVest = new Plus5DexterityVest(new ItemStatus(quality, sellIn));
+            var itemStatus = new ItemStatus(quality, sellIn);
+            var plus5DexterityVest = new Plus5DexterityVest(itemStatus);
 
             plus5DexterityVest.UpdateQuality();
 
-            Assert.AreEqual(new ItemQuality(expectedQuality), plus5DexterityVest.Quality);
+            Assert.AreEqual(new ItemQuality(expectedQuality), itemStatus.Quality);
         }
     }
 }
