@@ -11,7 +11,7 @@ namespace csharp
         [TestCase(2, 50, 50)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var agedBrie = new AgedBrie(sellIn, quality);
+            var agedBrie = new AgedBrie(new ItemStatus(quality, sellIn));
 
             agedBrie.UpdateQuality();
 

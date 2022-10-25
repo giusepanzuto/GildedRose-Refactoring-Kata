@@ -10,7 +10,7 @@ namespace csharp
         [TestCase(2, 50)]
         public void UpdateQuality(int sellIn, int quality)
         {
-            var sulfuras = new Sulfuras(sellIn, quality);
+            var sulfuras = new Sulfuras(new ItemStatus(quality, sellIn));
 
             sulfuras.UpdateQuality();
 

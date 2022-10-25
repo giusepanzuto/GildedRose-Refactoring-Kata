@@ -10,7 +10,7 @@ namespace csharp
         [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var plus5DexterityVest = new Plus5DexterityVest(sellIn, quality);
+            var plus5DexterityVest = new Plus5DexterityVest(new ItemStatus(quality, sellIn));
 
             plus5DexterityVest.UpdateQuality();
 

@@ -2,7 +2,7 @@
 {
     public class Plus5DexterityVest : Item
     {
-        public Plus5DexterityVest(int sellIn, ItemQuality quality):base("+5 Dexterity Vest", sellIn, quality)
+        public Plus5DexterityVest(ItemStatus itemStatus):base("+5 Dexterity Vest", itemStatus)
         {
         }
 

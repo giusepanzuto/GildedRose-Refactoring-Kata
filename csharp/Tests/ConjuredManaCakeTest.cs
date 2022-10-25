@@ -10,7 +10,7 @@ namespace csharp
         [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var conjuredManaCake = new ConjuredManaCake(sellIn, quality);
+            var conjuredManaCake = new ConjuredManaCake(new ItemStatus(quality, sellIn));
 
             conjuredManaCake.UpdateQuality();
 

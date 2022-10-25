@@ -2,7 +2,7 @@
 {
     public class ConjuredManaCake : Item
     {
-        public ConjuredManaCake(int sellIn, ItemQuality quality): base("Conjured Mana Cake", sellIn, quality)
+        public ConjuredManaCake(ItemStatus itemStatus): base("Conjured Mana Cake", itemStatus)
         {
         }
 

@@ -2,7 +2,7 @@
 {
     public class Sulfuras : Item
     {
-        public Sulfuras(int sellIn, ItemQuality quality):base("Sulfuras, Hand of Ragnaros", sellIn , quality)
+        public Sulfuras(ItemStatus itemStatus):base("Sulfuras, Hand of Ragnaros", itemStatus)
         {
         }
 

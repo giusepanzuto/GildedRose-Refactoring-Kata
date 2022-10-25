@@ -4,8 +4,8 @@ namespace csharp
 {
     public class GildedRose
     {
-        readonly IList<Item> _items;
-        public GildedRose(IList<Item> Items)
+        readonly IList<IItem> _items;
+        public GildedRose(IList<IItem> Items)
         {
             _items = Items;
         }

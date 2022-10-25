@@ -2,8 +2,8 @@
 {
     public class Backstage : Item
     {
-        public Backstage(int sellIn, ItemQuality quality) : 
-            base("Backstage passes to a TAFKAL80ETC concert", sellIn, quality)
+        public Backstage(ItemStatus itemStatus) : 
+            base("Backstage passes to a TAFKAL80ETC concert", itemStatus)
         {
         }
 

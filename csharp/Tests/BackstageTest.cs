@@ -10,7 +10,7 @@ namespace csharp
         [TestCase(2, 50, 50)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var backstage = new Backstage(sellIn, quality);
+            var backstage = new Backstage(new ItemStatus(quality, sellIn));
 
             backstage.UpdateQuality();
 

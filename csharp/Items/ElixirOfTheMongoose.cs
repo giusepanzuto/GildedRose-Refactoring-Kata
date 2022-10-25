@@ -2,7 +2,7 @@
 {
     public class ElixirOfTheMongoose: Item
     {
-        public ElixirOfTheMongoose(int sellIn, ItemQuality quality): base("Elixir of the Mongoose", sellIn, quality)
+        public ElixirOfTheMongoose(ItemStatus itemStatus): base("Elixir of the Mongoose", itemStatus)
         {
         }
 

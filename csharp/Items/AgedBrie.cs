@@ -2,7 +2,7 @@
 {
     public class AgedBrie : Item
     {
-        public AgedBrie(int sellIn, int quality): base("Aged Brie", sellIn, quality)
+        public AgedBrie(ItemStatus itemStatus): base("Aged Brie", itemStatus)
         {
         }
 

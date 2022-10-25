@@ -10,7 +10,7 @@ namespace csharp
         [TestCase(2, 50, 49)]
         public void UpdateQuality(int sellIn, int quality, int expectedQuality)
         {
-            var elixirOfTheMongoose = new ElixirOfTheMongoose(sellIn, quality);
+            var elixirOfTheMongoose = new ElixirOfTheMongoose(new ItemStatus(quality, sellIn));
 
             elixirOfTheMongoose.UpdateQuality();
 
