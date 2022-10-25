@@ -1,4 +1,6 @@
-﻿namespace csharp
+﻿using csharp.Items.QualityUpdater;
+
+namespace csharp.Items
 {
     public class Item : IItem
     {

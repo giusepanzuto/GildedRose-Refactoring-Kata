@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using csharp.Items;
+using NUnit.Framework;
 
-namespace csharp
+namespace csharp.Tests
 {
     [TestFixture]
     public class ElixirOfTheMongooseTest

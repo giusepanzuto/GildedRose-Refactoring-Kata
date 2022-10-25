@@ -1,4 +1,4 @@
-﻿namespace csharp
+﻿namespace csharp.Items.QualityUpdater
 {
     public class QualityUpdaterBackstage : IQualityUpdater
     {
