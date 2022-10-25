@@ -1,6 +1,6 @@
 ﻿namespace csharp.Items.QualityUpdater
 {
-    public class QualityUpdater2 : IQualityUpdater
+    public class QualityUpdaterDecrease : IQualityUpdater
     {
         public void UpdateStatus(ItemStatus status)
         {

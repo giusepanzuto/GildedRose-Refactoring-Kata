@@ -103,13 +103,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GildedRoseRunner.cs" />
     <Compile Include="Items\Items.cs" />
     <Compile Include="ItemQuality.cs" />
     <Compile Include="Items\IItem.cs" />
     <Compile Include="Items\QualityUpdater\IQualityUpdater.cs" />
     <Compile Include="Items\ItemStatus.cs" />
-    <Compile Include="Items\QualityUpdater\QualityUpdater1.cs" />
-    <Compile Include="Items\QualityUpdater\QualityUpdater2.cs" />
+    <Compile Include="Items\QualityUpdater\QualityUpdaterIncrease.cs" />
+    <Compile Include="Items\QualityUpdater\QualityUpdaterDecrease.cs" />
     <Compile Include="Items\QualityUpdater\QualityUpdaterBackstage.cs" />
     <Compile Include="Items\QualityUpdater\QualityUpdaterNope.cs" />
     <Compile Include="Tests\AgedBrieTest.cs" />

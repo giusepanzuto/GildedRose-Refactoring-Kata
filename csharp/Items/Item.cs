@@ -6,14 +6,8 @@ namespace csharp.Items
     {
         private readonly ItemStatus _status;
         private readonly IQualityUpdater _qualityUpdater;
-
-        public string Name { get; }
-        //public int SellIn
-        //{
-        //    get => _status.SellIn;
-        //    set => _status.SellIn = value;
-        //}
-        //public ItemQuality Quality => _status.Quality;
+        
+        private string Name { get; }
 
         protected Item(string name, ItemStatus itemStatus, IQualityUpdater qualityUpdater)
         {

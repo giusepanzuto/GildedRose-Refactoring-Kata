@@ -5,7 +5,7 @@ namespace csharp.Items
     public class AgedBrie : Item
     {
         public AgedBrie(ItemStatus itemStatus): 
-            base("Aged Brie", itemStatus, new QualityUpdater1())
+            base("Aged Brie", itemStatus, new QualityUpdaterIncrease())
         {
         }
     }
@@ -13,7 +13,7 @@ namespace csharp.Items
     public class ConjuredManaCake : Item
     {
         public ConjuredManaCake(ItemStatus itemStatus) : 
-            base("Conjured Mana Cake", itemStatus, new QualityUpdater2())
+            base("Conjured Mana Cake", itemStatus, new QualityUpdaterDecrease())
         {
         }
     }
@@ -29,7 +29,7 @@ namespace csharp.Items
     public class ElixirOfTheMongoose : Item
     {
         public ElixirOfTheMongoose(ItemStatus itemStatus) : 
-            base("Elixir of the Mongoose", itemStatus, new QualityUpdater2())
+            base("Elixir of the Mongoose", itemStatus, new QualityUpdaterDecrease())
         {
         }
     }
@@ -37,7 +37,7 @@ namespace csharp.Items
     public class Plus5DexterityVest : Item
     {
         public Plus5DexterityVest(ItemStatus itemStatus) : 
-            base("+5 Dexterity Vest", itemStatus, new QualityUpdater2())
+            base("+5 Dexterity Vest", itemStatus, new QualityUpdaterDecrease())
         {
         }
     }
